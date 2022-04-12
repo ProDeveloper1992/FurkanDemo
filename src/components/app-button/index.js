@@ -1,6 +1,7 @@
 import React from 'react';
 import {ActivityIndicator, Text, TouchableOpacity} from 'react-native';
-import {Colors} from '../../constants';
+import {Colors, FontTypes} from '../../constants';
+import {AppText} from '../index';
 import styles from './styles';
 
 const Button = ({title, onPress, loading}) => {
@@ -9,7 +10,9 @@ const Button = ({title, onPress, loading}) => {
       {loading ? (
         <ActivityIndicator size={'small'} color={Colors.white} />
       ) : (
-        <Text style={styles.buttonTitle}>{title}</Text>
+        <AppText size={16} color={Colors.white} fontType={FontTypes.medium}>
+          {title}
+        </AppText>
       )}
     </TouchableOpacity>
   );

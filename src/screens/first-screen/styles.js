@@ -11,7 +11,7 @@ export default StyleSheet.create({
     alignItems: 'center',
     paddingEnd: 15,
     paddingVertical: 5,
-    borderRadius: 8,
+    borderRadius: 10,
     backgroundColor: Colors.white,
     shadowColor: Colors.black,
     shadowOffset: {width: 0, height: 4},
@@ -32,5 +32,33 @@ export default StyleSheet.create({
     width: 24,
     height: 24,
     resizeMode: 'contain',
+  },
+  datePickerContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginTop: 10,
+  },
+  datePicker: {
+    flex: 1.2,
+  },
+  buttonContainer: {
+    flex: 0.8,
+    marginStart: 20,
+  },
+  tabsContainer: {
+    width: '100%',
+    flexDirection: 'row',
+    alignItems: 'center',
+    backgroundColor: Colors.grey_light,
+    borderRadius: 10,
+    padding: 2,
+    marginVertical: 10,
+  },
+  tabItem: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderRadius: 8,
+    padding: 10,
   },
 });

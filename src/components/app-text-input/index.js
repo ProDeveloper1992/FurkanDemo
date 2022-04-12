@@ -53,7 +53,7 @@ const styles = StyleSheet.create({
       alignItems: 'center',
       paddingVertical: Platform.OS === 'ios' ? 10 : 5,
       paddingHorizontal: Platform.OS === 'ios' ? 20 : 15,
-      borderRadius: 8,
+      borderRadius: 10,
       width: '100%',
       alignSelf: 'center',
       backgroundColor: Colors.white,
